@@ -1,9 +1,11 @@
-require("@nomiclabs/hardhat-waffle")
-require("dotenv").config()
-require("@nomiclabs/hardhat-etherscan")
-require("./tasks/blcok-number")
-require("hardhat-gas-reporter")
-require("solidity-coverage")
+import "@nomiclabs/hardhat-waffle"
+import "@nomiclabs/hardhat-etherscan"
+import "@nomiclabs/hardhat-ethers"
+import "dotenv/config"
+import "./tasks/blcok-number"
+import "hardhat-gas-reporter"
+import "solidity-coverage"
+import "@typechain/hardhat"
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
